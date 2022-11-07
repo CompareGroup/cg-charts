@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  alertmanager:
+    - apiVersion: v1
+      created: "2022-11-07T20:27:26.783555097Z"
+      home: https://github.com/CompareGroup/helm-charts/alertmanager
+      keywords:
+        - redirect
+        - nginx
+        - openshift
+      maintainers:
+        - email: itops@comparegroup.eu
+          name: CompareGroup
+      name: redirect
+      urls:
+        - https://github.com/CompareGroup/helm-charts/redirect-0.9.5.tgz
+      version: 0.9.5
