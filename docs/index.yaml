@@ -1,17 +1,30 @@
 apiVersion: v1
 entries:
-  alertmanager:
-    - apiVersion: v1
-      created: "2022-11-07T20:27:26.783555097Z"
-      home: https://github.com/CompareGroup/helm-charts/alertmanager
-      keywords:
-        - redirect
-        - nginx
-        - openshift
-      maintainers:
-        - email: itops@comparegroup.eu
-          name: CompareGroup
-      name: redirect
-      urls:
-        - https://github.com/CompareGroup/helm-charts/redirect-0.9.5.tgz
-      version: 0.9.5
+  redirect:
+  - apiVersion: v2
+    appVersion: random
+    created: "2022-11-07T20:40:35.465666+01:00"
+    dependencies:
+    - name: commons
+      repository: https://comparegroup.github.io/cg-helm-charts/
+      version: ^0.1
+    - name: cron-jobs
+      repository: https://comparegroup.github.io/cg-helm-charts/
+      version: ^0.1
+    - name: horizontal-pod-autoscalers
+      repository: https://comparegroup.github.io/cg-helm-charts/
+      version: ^0.2
+    description: Redirect
+    digest: c2a4926fa778497d113a1941ee5ec7a298b880784d65842c6c0a0796293d2507
+    home: https://github.com/wyrihaximusnet/docker-redirect
+    icon: https://helm.wyrihaximus.net/images/charts/redirect.png
+    kubeVersion: ^1.18
+    maintainers:
+    - email: helm@wyrihaximus.net
+      name: WyriHaximus
+    name: redirect
+    type: application
+    urls:
+    - https://comparegroup.github.io/cg-helm-charts/redirect-0.9.5.tgz
+    version: 0.9.5
+generated: "2022-11-07T20:40:35.462912+01:00"
